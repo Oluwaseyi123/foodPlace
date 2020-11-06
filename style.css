@@ -225,22 +225,27 @@ nav ul li a{
     fill: #EF8A17;
 }
 .mailing-list{
-    margin: 30px 100px 0px 100px;
+    margin: 30px 0px 0px 0px;
     font-family: 'montserrat';
-   margin-bottom: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    min-height: 70vh;
 }
 .mailing-list p:nth-of-type(1){
     color: #EF8A17;
     font-size: 45px;
+    margin: 30px 100px 0px 100px;
 }
 .mailing-list p:nth-of-type(2){
     letter-spacing: .5px;
     font-size: 18px;
     width: 300px;
+    margin: 30px 100px 0px 100px;
     
 }
 
 form{
+    margin: 30px 100px 0px 100px;
     width: 40vw;
     height: auto;
     box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, .4) ;
@@ -274,6 +279,7 @@ form{
    font-family: 'Raleway', sans-serif;
    color: #333333;
    display: block;
+   width:80%;
 }
 
 form button{
@@ -287,4 +293,27 @@ form button{
     margin-bottom: 20px;
     background: #EF8A17;
     cursor: pointer;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.custom-shape-divider-bottom-1604663522 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1604663522 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 267px;
+}
+
+.custom-shape-divider-bottom-1604663522 .shape-fill {
+    fill: #EF8A17;
 }
