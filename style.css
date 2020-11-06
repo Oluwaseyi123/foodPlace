@@ -225,9 +225,9 @@ nav ul li a{
     fill: #EF8A17;
 }
 .mailing-list{
-    margin: 30px 0px 0px 0px;
+
     font-family: 'montserrat';
-    margin-bottom: 50px;
+    
     position: relative;
     min-height: 70vh;
 }
@@ -316,4 +316,40 @@ form button{
 
 .custom-shape-divider-bottom-1604663522 .shape-fill {
     fill: #EF8A17;
+}
+
+.contact-address{
+    margin: 0px 100px 0px 100px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 80%;
+    justify-content: space-between;
+    font-family: 'montserrat';
+   
+}
+
+.address p{
+    width: 250px;
+}
+
+.address, .contact, .times p{
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.heading{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-address-container{
+    background: #EF8A17;
+}
+
+footer p{
+text-align: center;
+font-family: 'montserrat';
+color: #333333;
 }
