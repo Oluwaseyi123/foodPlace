@@ -1,0 +1,668 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo-div{
+    display: flex;
+   
+}
+
+.logo-div p{
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+nav{
+    margin: 20px 100px 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'montserrat';
+}
+nav ul{
+    width: 20vw;
+    margin-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    
+    z-index: 1;
+}
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+nav ul li a:after{
+    display: block;
+    content: '';
+    height: 4px;
+    transform: scaleX(0.0001);  
+    background:#E47C05;
+    transition: transform 250ms ease-in-out;
+    box-shadow: inset -40px 0px 30px -25px #fff, inset 40px 0px 30px -25px #fff
+}
+nav ul li a:hover:after{
+    transform: scaleX(1);
+}
+
+.landing-page{ 
+    min-height: 90vh; 
+    margin-bottom: 50px;
+    position: relative;
+    background-color: #ffffff;
+   
+}
+.landing-text{
+    margin: 50px 100px 0px 100px;
+    width: 50%;
+    margin-top: 160px;
+    vertical-align: middle;
+}
+.landing-page img:nth-of-type(2){
+    width: 100%;
+    margin-top: 300px;
+}
+.landing-text p:nth-of-type(1){
+    font-size: 45px;
+    font-family: 'Poppins';
+    line-height: auto;
+}
+
+.landing-text p:nth-of-type(2){
+   line-height: 22px;
+   font-family: 'Poppins';
+   letter-spacing: .8px;
+   margin-bottom: 30px;
+}
+
+.vector, .vector-2{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+}
+.substitute{
+    display: none;
+}
+.food{
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    bottom: 340px ;
+    margin-left: 70%;
+    animation-name: food-drop;
+    animation-duration: 2s;
+}
+
+@keyframes food-drop{
+    0%{
+        
+        opacity: 0;
+    }
+    100%{
+        
+    }
+}
+
+.landing-text button{
+    background: #EF8A17;
+    border: none;
+    width: 142px;
+    height: 53px;
+    border-radius: 40px;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    background: #E47C05;
+}
+
+.about-section{
+    position: relative;
+    margin: 100px 100px 0px 100px;
+    display: flex;
+    
+    justify-content: space-between;
+    min-height: 70vh;
+}
+.about-section p:nth-of-type(1){
+    font-size: 50px;
+    font-family: 'montserrat';
+    
+    color: #EF8A17;
+
+}
+
+.about-section p:nth-of-type(2){
+    line-height: 22px;
+    letter-spacing: .8px;
+    font-family: 'montserrat';
+    margin-top: 15px;
+    
+}
+.about-text{
+    width: 50%;
+}
+
+.about-image{
+    width: 287px;
+    height: 410px;
+    background: #F7C892;
+    border-radius: 40px 0px 40px 0px;
+    margin-bottom: 40px;
+}
+
+.about-image img{
+   margin-top: 35px;
+   margin-left: 35px;
+}
+.menu-section{
+    margin: 10px 0px 0px 0px;
+    margin-bottom: 150px;
+    position: relative;
+    min-height: 80vh;
+   
+}
+.menu-section > p:nth-of-type(1){
+    font-size: 50px;
+    font-family: 'montserrat';
+    margin-top: 50px;
+    color: #EF8A17;
+    margin-left: 98px;
+}
+
+.menu-slide , .menu-slides{
+    display: flex;
+    margin: 30px 100px 0px 100px;
+}
+
+.menu-slide{
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu-slides{
+    margin-top: 30px auto;
+    justify-content: center;
+    width: 80vw;
+
+}
+
+.slide1{
+   margin-right: 20px;
+   display: flex;
+   justify-content: center;
+   background: #F6BF7F;
+   width: auto;
+   height: auto;
+   border-radius: 40px 0px 40px 0px;
+}
+
+.slide1 img{
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.slides1 p{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'montserrat';
+    font-size: 15px;
+    margin-bottom: 10px;
+    
+   
+}
+
+.slides1 p span{
+    font-weight: 600;
+}
+
+.slides1 button{
+    display: block;
+    background:#EF8A17;
+    width: 130px;
+    height: 38px;
+    border-radius: 40px;
+    border: none;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    outline: none;
+    color: #FFF8F8;
+    text-transform: uppercase;
+    font-family: 'montserrat';
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.slides1 button:hover{
+    background: #E47C05;
+}
+
+.custom-shape-divider-bottom-1604936580 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1604936580 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 194px;
+}
+
+.custom-shape-divider-bottom-1604936580 .shape-fill {
+    fill: #E47C05;
+}
+.mailing-list{
+    font-family: 'montserrat';
+    position: relative;
+    min-height: 60vh;
+}
+.mailing-list p:nth-of-type(1){
+    color: #EF8A17;
+    font-size: 45px;
+    margin: 30px 100px 0px 100px;
+}
+.mailing-list p:nth-of-type(2){
+    letter-spacing: .5px;
+    font-size: 18px;
+    width: 300px;
+    margin: 10px 100px 0px 100px;
+    
+}
+
+form{
+    margin: 30px 100px 0px 100px;
+    width: 40vw;
+    height: auto;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, .4) ;
+    background: #ffffff;
+    display: flex;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.form-control{
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 80%;
+    position: relative;
+}
+
+.form-control input{
+    border: none;
+    outline: none;
+    background: none;
+    padding-bottom: 2px;
+    color: #333333;
+
+}
+.group{
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    
+}
+.group input{
+   font-family: 'Raleway', sans-serif;
+   color: #333333;
+   display: block;
+   width:80%;
+}
+
+form button{
+    border: none;
+    width: 142px;
+    height: 42px;
+    border-radius: 40px;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    margin-bottom: 20px;
+    background: #EF8A17;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.custom-shape-divider-bottom-1604663522 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1604663522 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 267px;
+}
+
+.custom-shape-divider-bottom-1604663522 .shape-fill {
+    fill: #EF8A17;
+}
+
+.contact-address{
+    margin: 0px 100px 0px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 80%;
+    justify-content: space-between;
+    font-family: 'montserrat';
+   
+}
+
+.address p{
+    width: 250px;
+}
+
+.address, .contact, .times p{
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.heading{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-address-container{
+    background: #EF8A17;
+}
+
+footer p{
+text-align: center;
+font-family: 'montserrat';
+color: #333333;
+}
+
+
+@media only screen and (max-width: 1193px){
+    .substitute{
+        display: block;
+    }
+    .main-bg{
+        display: none;
+    }
+    .about-text{
+        width: 50%;
+        margin-top: 30px;
+    }
+    .about-section p:nth-of-type(2){
+        line-height: 19px;
+        letter-spacing: .8px;
+        font-family: 'montserrat';
+        margin-top: 15px;
+        
+    }
+    .slide1 img{
+        margin: 15px 0px 20px 5px;
+    }
+}
+
+@media only screen and (max-width: 1016px){
+    .food{
+        margin-left: 63%;
+    }
+    .about-text{
+        width: 50%;
+        margin-top: 0px;
+    }
+    nav ul{
+        width: 30vw;
+    }
+    .about-section p:nth-of-type(2){
+        line-height: 17px;
+        letter-spacing: 1.2px;
+        font-family: 'montserrat';
+        margin-top: 15px;
+        
+    }
+}
+
+@media only screen and (max-width: 874px){
+    .food{
+        margin-left: 60%;
+        bottom: 250px ;
+        margin-left: 70%;
+        animation-name: food-drop;
+        animation-duration: 2s;
+    }
+    .about-section{
+        flex-direction: column-reverse;
+        margin: 0px 40px 0px 40px;  
+    }
+    .about-text{
+        width: 100%;
+
+    }
+    .about-section p:nth-of-type(2){
+        line-height: 17px;
+        letter-spacing: 1.2px;
+        font-family: 'montserrat';
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    .about-section p:nth-of-type(1){
+        text-align: center;
+        font-size: 35px;
+    }
+    .about-image{
+        width: 30vw;
+        height: auto;
+        background: #F7C892;
+        border-radius: 40px 0px 40px 0px;
+        justify-content: center;
+        display: block;
+        margin: 20px auto;
+    }
+    .about-image img{
+        display: block;
+        width: 30vw;
+        margin: 0 auto;
+
+    }
+    .landing-page{ 
+        min-height: 50vh; 
+        margin-bottom: 100px;
+        position: relative;
+    }
+
+    .vector-2{
+        display: none;
+    }
+    .food img{
+        width: 25vw;
+    }
+
+   .menu-slides{
+        display: flex;
+        margin: 30px 100px 0px 50px;
+    }
+    form{
+        margin: 30px 100px 0px 100px;
+        width: 60vw;
+        height: auto;
+        box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, .4) ;
+        background: #ffffff;
+        display: flex;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .landing-text p:nth-of-type(2){
+        line-height: 20px;
+        font-family: 'Poppins';
+        letter-spacing: .1px;
+        margin-bottom: 30px;
+        font-size: 13px;
+    }
+    .landing-text p:nth-of-type(1){
+        font-size: 35px;
+    }
+    nav{
+        margin: 20px 40px 0px 40px;
+    }
+    .landing-text{
+        margin: 140px 40px 0px 40px;
+    }
+    nav ul{
+        display: none;
+    }
+    .menu-section > p:nth-of-type(1){
+        font-size: 35px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .mailing-list p:nth-of-type(1){
+        color: #EF8A17;
+        font-size: 35px;
+        margin: 30px 40px 0px 40px;
+    }
+    .mailing-list p:nth-of-type(2){
+        letter-spacing: .5px;
+        font-size: 15px;
+        width: 300px;
+        margin: 10px 40px 0px 40px;
+    }
+    
+    form{
+        margin: 30px 40px 0px 40px;
+        height: auto;
+        box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, .4) ;
+        background: #ffffff;
+        display: flex;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    .form-control{
+        margin-left: 30px;
+        margin-top: 40px;
+        width: 80%;
+        position: relative;
+    }
+    
+    .form-control input{
+        border: none;
+        outline: none;
+        background: none;
+        padding-bottom: 2px;
+        color: #333333;
+    
+    }
+    .group{
+        margin-bottom: 20px;
+        border-bottom: 1px solid black;
+        
+    }
+    .group input{
+       font-family: 'Raleway', sans-serif;
+       color: #333333;
+       display: block;
+       width:80%;
+    }
+    
+    form button{
+        border: none;
+        width: 142px;
+        height: 42px;
+        border-radius: 40px;
+        display: block;
+        margin: 0 auto;
+        outline: none;
+        margin-bottom: 20px;
+        background: #EF8A17;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 600;
+    }
+    
+    .custom-shape-divider-bottom-1604663522 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-bottom-1604663522 svg {
+        position: relative;
+        display: block;
+        width: calc(300% + 1.3px);
+        height: 267px;
+    }
+    
+    .custom-shape-divider-bottom-1604663522 .shape-fill {
+        fill: #EF8A17;
+    }
+    
+    .contact-address{
+        margin: 0px 100px 0px 100px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 80%;
+        justify-content: space-between;
+        font-family: 'montserrat';
+    }
+    
+    .address p{
+        width: 250px;
+    }
+    
+    .address, .contact, .times p{
+        display: flex;
+        margin-bottom: 10px;
+    
+    }
+    
+    .heading{
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .contact-address-container{
+        background: #EF8A17;
+    }
+    .contact-address{
+        flex-direction: column;
+        margin: 0px 40px 0px 40px;
+    }
+
+    .address-div, .opening-hours{
+        padding-bottom: 30px;
+    }
+}
