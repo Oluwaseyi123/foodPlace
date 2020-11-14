@@ -644,6 +644,7 @@ color: #333333;
     .hamburger{
         display: block;
     }
+
     nav ul{
         display: none;
         width: 100%;
@@ -652,8 +653,7 @@ color: #333333;
         background: #E47C05;
         top: 5vw ;
         margin-top: 30px;
-        transition: .2s;
-        animation: left 0s .2s alternate-reverse ease-out;
+        animation: left 0s 0s alternate ease-out;
     }
 
     nav ul li{
@@ -693,7 +693,7 @@ color: #333333;
        display: flex;
        flex-direction: column;
        position: absolute;
-       animation: left 1s 0s alternate-reverse ease-in;
+       animation: left .5s 0s alternate-reverse ease-in;
 
     }
     nav{
