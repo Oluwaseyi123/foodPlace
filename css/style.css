@@ -8,6 +8,7 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 20px 100px 0px 100px;
+    font-family: 'Raleway';
 }
 
 nav ul{
@@ -28,7 +29,10 @@ nav ul li{
 }
 
 .logo-div p{
-    margin-top: 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+
 }
 
 .hamburger{
@@ -453,7 +457,7 @@ color: #333333;
         margin-top: 0px;
     }
     .logo-div p{
-        padding-top: 20px;
+        padding-top: 15px;
     }
     .about-section p:nth-of-type(2){
         line-height: 17px;
