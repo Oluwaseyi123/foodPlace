@@ -4,41 +4,56 @@
     box-sizing: border-box;
 }
 
-.logo-div{
+nav{
     display: flex;
-   
+    justify-content: space-between;
+    margin: 20px 100px 0px 100px;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    width: auto;
+    margin-top: 20px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+.logo-div{
+    display:inline-flex;
+    width: auto;
 }
 
 .logo-div p{
-    padding-top: 15px;
-    font-weight: 700;
-    font-size: 18px;
+    margin-top: 20px;
 }
 
-nav{
-    margin: 20px 100px 0px 100px;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'montserrat';
-}
-nav ul{
-    width: 20vw;
-    margin-right: 20%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
-    
-    z-index: 1;
-}
-nav ul li{
-    list-style: none;
+.hamburger{
+    width: auto;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
     cursor: pointer;
+    margin-top: 15px;
+    z-index: 1;
+    display: none;
+}
+.hamburger:focus{
+    outline: none;
+}
+.hamburger:hover{
+    background: transparent;
 }
 
 nav ul li a{
     text-decoration: none;
     color: #000000;
     cursor: pointer;
+    padding: 0px 20px;
+    display: inline-block;
 }
 
 nav ul li a:after{
@@ -73,13 +88,13 @@ nav ul li a:hover:after{
 }
 .landing-text p:nth-of-type(1){
     font-size: 45px;
-    font-family: 'Poppins';
+    font-family: 'Raleway';
     line-height: auto;
 }
 
 .landing-text p:nth-of-type(2){
    line-height: 22px;
-   font-family: 'Poppins';
+   font-family: 'Raleway';
    letter-spacing: .8px;
    margin-bottom: 30px;
 }
@@ -134,13 +149,12 @@ button:hover{
     position: relative;
     margin: 100px 100px 0px 100px;
     display: flex;
-    
     justify-content: space-between;
     min-height: 70vh;
 }
 .about-section p:nth-of-type(1){
     font-size: 50px;
-    font-family: 'montserrat';
+    font-family:'Raleway';
     
     color: #EF8A17;
 
@@ -149,7 +163,7 @@ button:hover{
 .about-section p:nth-of-type(2){
     line-height: 22px;
     letter-spacing: .8px;
-    font-family: 'montserrat';
+    font-family: 'Raleway';
     margin-top: 15px;
     
 }
@@ -178,7 +192,7 @@ button:hover{
 }
 .menu-section > p:nth-of-type(1){
     font-size: 50px;
-    font-family: 'montserrat';
+    font-family: 'Raleway';
     margin-top: 50px;
     color: #EF8A17;
     margin-left: 98px;
@@ -222,7 +236,7 @@ button:hover{
 .slides1 p{
     margin-top: 20px;
     text-align: center;
-    font-family: 'montserrat';
+    font-family:'Raleway';
     font-size: 15px;
     margin-bottom: 10px;
     
@@ -307,7 +321,7 @@ form{
 
 .form-control{
     margin-left: 30px;
-    margin-top: 40px;
+    margin-top: 30px;
     width: 80%;
     position: relative;
 }
@@ -376,8 +390,7 @@ form button{
     padding-bottom: 30px;
     width: 80%;
     justify-content: space-between;
-    font-family: 'montserrat';
-   
+    font-family: 'Raleway'; 
 }
 
 .address p{
@@ -401,7 +414,7 @@ form button{
 
 footer p{
 text-align: center;
-font-family: 'montserrat';
+font-family: 'Raleway';
 color: #333333;
 }
 
@@ -420,13 +433,15 @@ color: #333333;
     .about-section p:nth-of-type(2){
         line-height: 19px;
         letter-spacing: .8px;
-        font-family: 'montserrat';
+        font-family: 'Raleway';
         margin-top: 15px;
         
     }
     .slide1 img{
         margin: 15px 0px 20px 5px;
     }
+   
+
 }
 
 @media only screen and (max-width: 1016px){
@@ -437,15 +452,18 @@ color: #333333;
         width: 50%;
         margin-top: 0px;
     }
-    nav ul{
-        width: 30vw;
+    .logo-div p{
+        padding-top: 20px;
     }
     .about-section p:nth-of-type(2){
         line-height: 17px;
         letter-spacing: 1.2px;
-        font-family: 'montserrat';
+        font-family: 'Raleway';
         margin-top: 15px;
         
+    }
+    .logo-div p{
+        margin-top: 0px;
     }
 }
 
@@ -468,7 +486,7 @@ color: #333333;
     .about-section p:nth-of-type(2){
         line-height: 17px;
         letter-spacing: 1.2px;
-        font-family: 'montserrat';
+        font-family: 'Raleway';
         margin-top: 15px;
         font-size: 12px;
     }
@@ -477,7 +495,7 @@ color: #333333;
         font-size: 35px;
     }
     .about-image{
-        width: 30vw;
+        width: 35vw;
         height: auto;
         background: #F7C892;
         border-radius: 40px 0px 40px 0px;
@@ -489,6 +507,7 @@ color: #333333;
         display: block;
         width: 30vw;
         margin: 0 auto;
+        padding: 10px 0px;
 
     }
     .landing-page{ 
@@ -535,9 +554,7 @@ color: #333333;
     .landing-text{
         margin: 140px 40px 0px 40px;
     }
-    nav ul{
-        display: none;
-    }
+
     .menu-section > p:nth-of-type(1){
         font-size: 35px;
         text-align: center;
@@ -580,7 +597,7 @@ color: #333333;
         padding-bottom: 30px;
         width: 80%;
         justify-content: space-between;
-        font-family: 'montserrat';
+        font-family: 'Raleway';
     }
     
     .address p{
@@ -616,6 +633,75 @@ color: #333333;
         width: 122px;
         height: 45px;
         border-radius: 45px;
+    }
+}
+@media only screen and (max-width: 757px){
+
+    .hamburger{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        width: 100%;
+        height: 95vh;
+        align-items: center;
+        background: #E47C05;
+        top: 5vw ;
+        margin-top: 30px;
+        transition: .2s;
+        animation: left 0s .2s alternate-reverse ease-out;
+    }
+
+    nav ul li{
+        padding-top: 50px;
+    }
+
+    nav ul li a{
+        font-size: 24px;
+        font-family: 'raleway';
+    }
+
+    nav ul li a:hover{
+        font-size: 30px;
+        transition: .5s;
+
+    }
+
+    @keyframes left {
+        0%{
+            left: 0;
+        }
+        100%{
+            left: 100%;
+        }
+    }
+
+    nav ul li a:after{
+        display: block;
+        content: '';
+        height: 4px;
+        transform: scaleX(0.0001);  
+        background:#ffffff;
+        transition: transform 250ms ease-in-out;
+        box-shadow: inset -40px 0px 30px -25px #fff, inset 40px 0px 30px -25px #fff
+    }
+    nav ul.check{
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       animation: left 1s 0s alternate-reverse ease-in;
+
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0px 0px 0px;
+    }
+    .logo-div{
+        margin-left: 40px;
+    }
+    .hamburger{
+        margin-right: 40px;
     }
 }
 

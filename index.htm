@@ -14,20 +14,24 @@
 </head>
 <body>
     <div class="landing-page">
-        <nav>
-            <div class="logo-div">
-                <img src="images/logo.svg" alt="Logo">
-                <p>Food Place</p>
-            </div>
-            <ul>
-                <li><a href="#">Our Menu</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="bag">
-                <i class="material-icons-outlined" style="cursor: pointer;">shopping_bag</i>
-            </div>
-        </nav>
+       <nav>
+           <div class="logo-div">
+               <div class="logo">
+                   <img src="images/logo.svg" alt="">
+               </div>
+               <p>Food Place</p>
+           </div>
+           
+           <ul class="nav-ul" >
+               <li><a class="nav-link" href="#menu-section">Our Menu</a></li>
+               <li><a class="nav-link-one" href="#about-section">About Us</a></li>
+               <li><a class="nav-link-two" href="#contact-address-container">Contact</a></li>
+           </ul>
+
+           <div class="hamburger">
+               <i class="material-icons">menu</i>
+           </div>
+       </nav>
         <div class="landing-text">
             <p>For the love of  <br> <span style="color: #EF8A17;">Food</span> </p>
             <p>Lorem ipsum dolor sit amet consectetur, 
@@ -51,8 +55,8 @@
        </div>
        
     </div>
-    
-    <div class="about-section">
+
+    <div class="about-section" id="about-section">
         <div class="about-text">
             <p>About Us</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -182,7 +186,7 @@
             </div>
         </form>
     </div>
-    <div class="contact-address-container">
+    <div class="contact-address-container" id="contact-address-container">
         <div class="contact-address">
             <div class="address-div">
                 <p class="heading">Our Branches</p>
